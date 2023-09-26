@@ -1,5 +1,5 @@
 <?php
-
+var_dump(getenv('DB_HOST'));
 // Para ejecutar la vista en la terminal, desde la raíz del proyecto:
 // Comando: php -S localhost:8080
 

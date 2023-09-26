@@ -7,11 +7,11 @@ class Connection
         $connection = null;
 
         try {
-            $host     = '127.0.0.1';
-            $port     = '3306';
-            $database = 'db_desafio';
-            $username = 'root';
-            $password = 'angel777';
+            $host     = getenv('DB_HOST');
+            $port     =  getenv('DB_PORT');
+            $database = getenv('DB_DATABASE');
+            $username =  getenv('DB_USER');
+            $password = getenv('DB_PASSWORD');
 
             // Data Source Name
             $dsn = 'mysql:host=' . $host . ';dbname=' . $database . ';port=' .$port . ';charset=utf8';
