@@ -7,11 +7,11 @@ class Connection
         $connection = null;
 
         try {
-            $host     = getenv('DB_HOST');
-            $port     =  getenv('DB_PORT');
-            $database = getenv('DB_DATABASE');
-            $username =  getenv('DB_USER');
-            $password = getenv('DB_PASSWORD');
+            $host     = $_SERVER['DB_HOST'];
+            $port     =  $_SERVER['DB_PORT'];
+            $database = $_SERVER['DB_NAME'];
+            $username =  $_SERVER['DB_USER'];
+            $password = $_SERVER['DB_PASSWORD'];
 
             // Data Source Name
             $dsn = 'mysql:host=' . $host . ';dbname=' . $database . ';port=' .$port . ';charset=utf8';

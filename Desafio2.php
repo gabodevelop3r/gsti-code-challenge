@@ -1,5 +1,7 @@
 <?php
 
+require_once('./autoload.php');
+
 require_once('config/Connection.php');
 
 require_once('lib/headers.php');
